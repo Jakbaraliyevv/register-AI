@@ -32,15 +32,15 @@ export function LocationSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="flex items-center justify-between   gap-8">
           {/* Chap taraf: Venue rasmi */}
-          <div className="relative group ">
+          <div className="relative immgg group ">
             <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-3xl opacity-20 blur-3xl group-hover:opacity-30 transition-opacity" />
             <div className="relative rounded-3xl overflow-hidden border-2 border-purple-500/30 backdrop-blur-sm">
               <ImageWithFallback
-                src="https://al-khwarizmischool.uz/img/project-7.jpg"
+                src="https://ict.xabar.uz/static/crop/3/8/736_736_95_3833418791.jpg"
                 alt="Konferensiya markazi"
-                className="w-full immgg h-full object-cover"
+                className="w-full  h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent backdrop-blur-sm">
@@ -55,7 +55,7 @@ export function LocationSection() {
           </div>
 
           {/* O‘ng taraf: Ma’lumotlar va xarita */}
-          <div className="space-y-6">
+          <div className="space-y-6 nmm">
             {/* Manzil kartasi */}
             <div className="bg-gradient-to-br from-gray-900 to-black border border-purple-500/30 rounded-2xl p-6 backdrop-blur-sm">
               <div className="flex items-start gap-4">

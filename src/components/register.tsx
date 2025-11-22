@@ -546,7 +546,7 @@ export default function Register(): JSX.Element {
             }
             onChange={onDistrictChange}
             disabled={!regionId}
-            className={`w-full selectV text-white border border-gray-700 rounded-lg p-2 ${
+            className={`w-full  text-white border border-gray-700 rounded-lg p-2 ${
               !regionId && "opacity-50 cursor-not-allowed"
             } `}
           >
@@ -651,7 +651,7 @@ export default function Register(): JSX.Element {
   );
 
   return (
-    <section className="bg-black relative z-50">
+    <section className="bg-black  relative z-50">
       <div className="mtop max-w-6xl mx-auto text-white py-10 p-[20px] px-4 m-auto flex flex-col items-center justify-center">
         <img src={logo} className="logoo" alt="" />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

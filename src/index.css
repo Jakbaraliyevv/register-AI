@@ -3495,6 +3495,12 @@ html {
   margin-top: 20px;
 }
 
+.bg_imgg {
+  background-image: url("https://www.sercansolmaz.com/content/images/2025/02/DALL-E-2025-02-10-00.30.24---A-16_9-cover-image-with-a-deep-midnight-blue-gradient-background.-Overlay-an-abstract-neural-network-or-circuit-board-pattern-in-neon-blue-and-purple-.webp");
+  opacity: 0.4;
+  z-index: 50;
+}
+
 /* .mtop{
   padding-top: 40px;
 } */
@@ -3504,6 +3510,15 @@ html {
   padding: 30px 0;
 }
 
+.immgg{
+  height: 90% !important;
+  width: 60%;
+}
+
+
+.nmm{
+  width: 50%;
+}
 .minuss {
   margin-top: -180px;
 }

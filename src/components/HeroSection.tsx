@@ -13,7 +13,7 @@ export function FiveBlocks() {
   const allBlocks = [...blocks]; // original massivni saqlab qo'yish
   const mainBlock = allBlocks.shift(); // birinchi elementni olib olamiz
   const smallBlocks = allBlocks;
-  console.log(smallBlocks, "4567890-8589");
+
   return (
     <div className="w-full mt-![20px]">
       <ScrollReveal className="mt-6 mt-10" direction="up" delay={0.04}>
@@ -84,13 +84,6 @@ export function FiveBlocks() {
   );
 }
 
-
-
-
-
-
-
-
 export function HeroSection() {
   const { showRegister, setShowRegister } = useModal();
 
@@ -140,6 +133,7 @@ export function HeroSection() {
           alt="AI Neural Network"
           className="w-full h-full object-cover opacity-40 max-w-none"
         />
+
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-purple-900/20 to-black" />
       </div>
 
