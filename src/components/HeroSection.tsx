@@ -84,6 +84,13 @@ export function FiveBlocks() {
   );
 }
 
+
+
+
+
+
+
+
 export function HeroSection() {
   const { showRegister, setShowRegister } = useModal();
 
