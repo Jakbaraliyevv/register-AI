@@ -5,7 +5,7 @@ export function LocationSection() {
   return (
     <section
       id="manzil"
-      className="relative py-24 lg:py-32 bg-gradient-to-b from-black via-purple-950/10 to-black overflow-hidden"
+      className="minuss relative py-24 lg:py-32 bg-gradient-to-b from-black via-purple-950/10 to-black overflow-hidden"
     >
       {/* Fon Grid */}
       <div

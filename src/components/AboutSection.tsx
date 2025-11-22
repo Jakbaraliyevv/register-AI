@@ -102,7 +102,7 @@ export function AboutSection() {
             </div>
 
             {/* Stats – Responsive */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {/* <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
               {stats.map((stat, i) => (
                 <div key={i} className="text-center">
                   <div className="mb-2 flex justify-center">
@@ -116,7 +116,7 @@ export function AboutSection() {
                   <div className="text-xs text-gray-500 mt-1">{stat.label}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* RIGHT – IMAGE */}

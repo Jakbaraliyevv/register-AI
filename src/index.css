@@ -3489,10 +3489,20 @@ html {
   padding: 30px 0;
 }
 
+.minuss {
+  margin-top: -160px;
+}
+
+@media (max-width: 600px) {
+  .minuss {
+    margin-top: -60px;
+  }
+}
+
 .selectV {
   background-color: #101828;
 }
-.gapp{
+.gapp {
   gap: 80px;
 }
 .select-dark {
@@ -3505,9 +3515,7 @@ html {
   font-size: 16px;
 }
 
-
-
-.topp{
+.topp {
   margin-top: 80px;
 }
 
