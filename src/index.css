@@ -3435,6 +3435,13 @@ html {
   inherits: false;
 }
 
+
+
+.texttt{
+  font-size: 22px;
+  font-weight: 600;
+}
+
 @property --tw-backdrop-saturate {
   syntax: "*";
   inherits: false;
@@ -3468,6 +3475,13 @@ html {
   initial-value: 1;
 }
 
+.nzom {
+  width: 160px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #9810fa;
+}
+
 @keyframes pulse {
   50% {
     opacity: 0.5;
@@ -3490,7 +3504,7 @@ html {
 }
 
 .minuss {
-  margin-top: -160px;
+  margin-top: -180px;
 }
 
 @media (max-width: 600px) {

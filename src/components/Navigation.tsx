@@ -7,22 +7,10 @@ import logo from "../assets/dg.png";
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { showRegister, setShowRegister } = useModal();
-  const [language, setLanguage] = useState("EN");
+  const [language, setLanguage] = useState("UZ");
 
-  const navLinks = [
-    "Haqida",
-    "Manzil",
-    "Homiylar",
-    "Bog‘lanish",
-    <a
-      href="../../public/nizom.docx"
-      target="_blank" // yangi tabda ochadi
-      rel="noopener noreferrer"
-    >
-      Nizom
-    </a>,
-  ];
-  const languages = ["EN"];
+  const navLinks = ["Haqida", "Manzil", "Homiylar", "Bog‘lanish"];
+  const languages = ["UZ"];
 
   // 'Nutqchilar' "Jadval",
 

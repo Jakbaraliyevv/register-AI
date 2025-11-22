@@ -2143,6 +2143,109 @@ export default function Register(): JSX.Element {
   );
 
   // Form bo'limi komponenti
+  //   const FormSection = ({
+  //     title,
+  //     number,
+  //     form,
+  //     regionId,
+  //     tumanlar,
+  //     onInputChange,
+  //     onRegionChange,
+  //     onDistrictChange,
+  //   }: {
+  //     title: string;
+  //     number: number;
+  //     form: PersonData;
+  //     regionId: number | null;
+  //     tumanlar: Tuman[];
+  //     onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  //     onRegionChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  //     onDistrictChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  //   }) => (
+  //     <div className="space-y-4">
+  //       <div className="flex items-center gap-2 text-purple-300 font-semibold border-b border-purple-500/30 pb-2">
+  //         <span className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm">
+  //           {number}
+  //         </span>
+  //         {title}
+  //       </div>
+
+  //       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+  //         <InputField
+  //           label="Ism"
+  //           name="first_name"
+  //           value={form.first_name}
+  //           onChange={onInputChange}
+  //           required
+  //           inputRef={number === 1 ? firstNameRef : undefined}
+  //         />
+  //         <InputField
+  //           label="Familiya"
+  //           name="last_name"
+  //           value={form.last_name}
+  //           onChange={onInputChange}
+  //         />
+  //       </div>
+
+  //       <InputField
+  //         label="Telefon"
+  //         name="phone_number"
+  //         value={form.phone_number}
+  //         onChange={onInputChange}
+  //         type="tel"
+  //         placeholder="+998901234567"
+  //         required
+  //       />
+
+  //       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+  //         <InputField
+  //           label="Tug'ilgan sana"
+  //           name="birth_date"
+  //           value={form.birth_date}
+  //           onChange={onInputChange}
+  //           type="date"
+  //         />
+  //         <InputField
+  //           label="Ta'lim / O'qish joyi"
+  //           name="study_place"
+  //           value={form.study_place}
+  //           onChange={onInputChange}
+  //         />
+  //       </div>
+
+  //       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+  //         <SelectField
+  //           label="Viloyat / Hudud"
+  //           value={regionId || ""}
+  //           onChange={onRegionChange}
+  //           placeholder="Viloyatni tanlang"
+  //           options={viloyatlar as Viloyat[]}
+  //         />
+  //         <SelectField
+  //           label="Tuman / Shahar"
+  //           value={
+  //             (tumanlar as Tuman[]).find((t) => t.name_uz === form.district)
+  //               ?.id || ""
+  //           }
+  //           onChange={onDistrictChange}
+  //           disabled={!regionId}
+  //           placeholder={regionId ? "Tumanni tanlang" : "Avval viloyat tanlang"}
+  //           options={tumanlar}
+  //         />
+  //       </div>
+
+  //       <InputField
+  //         label="Email"
+  //         name="email"
+  //         value={form.email}
+  //         onChange={onInputChange}
+  //         type="email"
+  //         required
+  //       />
+  //     </div>
+  //   );
+
+  // Form bo'limi komponenti
   const FormSection = ({
     title,
     number,
@@ -2152,6 +2255,7 @@ export default function Register(): JSX.Element {
     onInputChange,
     onRegionChange,
     onDistrictChange,
+    showNumber = false, // Default: raqam ko'rsatilmasin
   }: {
     title: string;
     number: number;
@@ -2161,14 +2265,21 @@ export default function Register(): JSX.Element {
     onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onRegionChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
     onDistrictChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+    showNumber?: boolean;
   }) => (
     <div className="space-y-4">
-      <div className="flex items-center gap-2 text-purple-300 font-semibold border-b border-purple-500/30 pb-2">
-        <span className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm">
-          {number}
-        </span>
-        {title}
-      </div>
+      {showNumber ? (
+        <div className="flex items-center gap-2 text-purple-300 font-semibold border-b border-purple-500/30 pb-2">
+          <span className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm">
+            {number}
+          </span>
+          {title}
+        </div>
+      ) : (
+        <div className="text-purple-300 font-semibold border-b border-purple-500/30 pb-2">
+          {title}
+        </div>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <InputField
@@ -2244,10 +2355,9 @@ export default function Register(): JSX.Element {
       />
     </div>
   );
-
   // Contest uchun maxsus komponent
   const ContestContent = () => (
-    <div className="text-center space-y-6">
+    <div className="text-center topp space-y-6">
       <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-2xl p-6 border border-purple-500/30">
         <h3 className="text-2xl font-bold text-white mb-4">
           Contest Yo'nalishi
@@ -2300,7 +2410,12 @@ export default function Register(): JSX.Element {
               window.location.href = "https://raqamliavlod.uz/";
             }
           }}
-          className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 transition text-white font-semibold"
+          className={`
+                            flex-1 px-4 py-3 rounded-xl transition font-semibold
+                            ${
+                              loading || !agree ? "btn-disabled" : "btn-enabled"
+                            }
+                          `}
         >
           {loading ? "Tasdiqlanmoqda..." : "Tasdiqlash"}
         </button>
@@ -2424,46 +2539,55 @@ export default function Register(): JSX.Element {
                 className="space-y-4"
                 aria-labelledby="register-heading"
               >
-                <h2 id="register-heading" className="text-xl font-semibold">
-                  {eventTitle} — Ro'yxatdan o'tish
-                </h2>
+                <div className="flex items-center justify-between">
+                  <h2 id="register-heading" className="text-xl font-semibold">
+                    {eventTitle} — Ro'yxatdan o'tish
+                  </h2>
+                  <a
+                    className="flex items-center justify-center  nzom"
+                    href="../../public/nizom.pdf"
+                    target="_blank" // yangi tabda ochadi
+                    rel="noopener noreferrer"
+                  >
+                    Nizomni ko'rish
+                  </a>
+                </div>
 
                 {error && (
                   <div className="text-sm text-red-500 bg-red-500/10 border border-red-500/30 rounded-lg p-3">
                     {error}
                   </div>
                 )}
-
                 {/* ===== CONTEST YO'NALISHI (formsiz) ===== */}
                 {noForm ? (
                   <ContestContent />
                 ) : (
-                  /* ===== BOSHQA YO'NALISHLAR (form bilan) ===== */
                   <>
-                    {/* ASOSIY FOYDALANUVCHI */}
                     <FormSection
-                      title="1- Ishtirokchi"
-                      //   number={2}
+                      title="Ishtirokchi"
+                      number={1}
                       form={mainForm}
                       regionId={mainRegionId}
                       tumanlar={mainTumanlar}
                       onInputChange={handleMainChange}
                       onRegionChange={handleMainRegionChange}
                       onDistrictChange={handleMainDistrictChange}
+                      showNumber={needsPartner} // Faqat rfutbolda raqam ko'rsatiladi
                     />
 
                     {/* SHERIK (faqat rfutbol uchun) */}
                     {needsPartner && (
                       <div className="mt-6 pt-6 border-t-2 border-dashed border-purple-500/30">
                         <FormSection
-                          title="2- Ishtirokchi"
-                        //   number={2}
+                          title="Ishtirokchi"
+                          number={2}
                           form={partnerForm}
                           regionId={partnerRegionId}
                           tumanlar={partnerTumanlar}
                           onInputChange={handlePartnerChange}
                           onRegionChange={handlePartnerRegionChange}
                           onDistrictChange={handlePartnerDistrictChange}
+                          showNumber={true} // Har doim ko'rsatiladi
                         />
                       </div>
                     )}
@@ -2510,11 +2634,9 @@ export default function Register(): JSX.Element {
                           type="submit"
                           disabled={loading || !agree}
                           className={`
-                            flex-1 px-4 py-3 rounded-xl transition font-semibold
-                            ${
-                              loading || !agree ? "btn-disabled" : "btn-enabled"
-                            }
-                          `}
+          flex-1 px-4 py-3 rounded-xl transition font-semibold
+          ${loading || !agree ? "btn-disabled" : "btn-enabled"}
+        `}
                         >
                           {loading
                             ? "Yuborilmoqda..."
