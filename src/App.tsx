@@ -86,9 +86,17 @@ const blocks = [
   },
 ];
 
+// export function BigBanner() {
+//   return (
+//     <a href="/register/robo-sumo">
+
+//     </a>
+//   );
+// }
+
 export function BigBanner() {
   return (
-    <a href="/register/robo-sumo">
+    <Link to="/register/robo-sumo">
       <div className="max-w-4xl mx-auto  sm:px-6 lg:px-8">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl  flex flex-col md:flex-row bg-gradient-to-br from-purple-900/40 via-indigo-900/30 to-black border border-purple-500/20">
           {/* Left side - Image */}
@@ -129,6 +137,6 @@ export function BigBanner() {
           <div className="absolute inset-0 rounded-3xl pointer-events-none border border-purple-400/30" />
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
