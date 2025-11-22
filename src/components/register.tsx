@@ -6,6 +6,7 @@ import logo from "../assets/dg.png";
 import viloyatlar from "../components/district/viloyat.json";
 import tumanlar from "../components/district/tuman.json";
 import { Footer } from "./Footer";
+import { Link } from "react-router-dom";
 
 type Params = { id?: string };
 
@@ -654,7 +655,9 @@ export default function Register(): JSX.Element {
   return (
     <section className="bg-black  relative z-50">
       <div className="mtop max-w-6xl mx-auto text-white py-10 p-[20px] px-4 m-auto flex flex-col items-center justify-center">
-        <img src={logo} className="logoo" alt="" />
+        <Link to="/">
+          <img src={logo} className="logoo" alt="Logo" />
+        </Link>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <aside className="lg:col-span-1 rounded-l-2xl overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 shadow-lg flex flex-col">
             <div className="w-full flex-1 min-h-0 bg-gray-700">
@@ -881,7 +884,6 @@ export default function Register(): JSX.Element {
             )}
           </main>
         </div>
-
         {/* Sovg'alar qismi - barcha yo'nalishlar uchun */}
         <div className="mb-5 w-full flex flex-col flex-wrap gap-8">
           <div className="text-center">
