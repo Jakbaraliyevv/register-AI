@@ -548,7 +548,7 @@ export default function Register(): JSX.Element {
             }
             onChange={onDistrictChange}
             disabled={!regionId}
-            className={`w-full  text-white border border-gray-700 rounded-lg p-2 ${
+            className={`w-full selectV text-white border border-gray-700 rounded-lg p-2 ${
               !regionId && "opacity-50 cursor-not-allowed"
             } `}
           >
