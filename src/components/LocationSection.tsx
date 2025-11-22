@@ -27,23 +27,25 @@ export function LocationSection() {
             Bizni konferensiyamizga tashrif buyuring:{" "}
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"></span>
           </h2>
-          <p className="text-gray-400 texttt max-w-2xl mx-auto">AL_Xorazmiy Markazi</p>
+          <p className="text-gray-400 texttt max-w-2xl mx-auto">
+            Muhammad al-Xorazmiy nomidagi ixtisoslashtirilgan maktab
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Chap taraf: Venue rasmi */}
-          <div className="relative group">
+          <div className="relative group ">
             <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-3xl opacity-20 blur-3xl group-hover:opacity-30 transition-opacity" />
             <div className="relative rounded-3xl overflow-hidden border-2 border-purple-500/30 backdrop-blur-sm">
               <ImageWithFallback
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIIIr8Tqqkl2mDGvM2R_G0GnfRa76Hf0XRUp6zw508sCA53yFI9o0kBVvuafxkkBT_ak&usqp=CAU"
+                src="https://al-khwarizmischool.uz/img/project-7.jpg"
                 alt="Konferensiya markazi"
-                className="w-full h-full object-cover"
+                className="w-full immgg h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent backdrop-blur-sm">
                 <h3 className="text-white text-2xl mb-2">
-                  AL_Xorazmiy Markazi
+                  Muhammad al-Xorazmiy nomidagi ixtisoslashtirilgan maktab
                 </h3>
                 {/* <p className="text-purple-400">
                   1000+ ishtirokchi sig‘imi bilan zamonaviy jihozlar
@@ -63,9 +65,9 @@ export function LocationSection() {
                 <div>
                   <h4 className="text-white mb-2">Manzil</h4>
                   <p className="text-gray-400">
-                    Zarqaynar ko‘chasi, 3-uy
+                    Tepamasjid ko‘chasi, 4-uy
                     <br />
-                    Shayxontohur tumani, Toshkent
+                    Mirzo Ulug‘bek tumani, Toshkent
                     <br />
                     O‘zbekiston
                   </p>
@@ -75,19 +77,8 @@ export function LocationSection() {
 
             {/* Xarita */}
             <div className="relative rounded-2xl overflow-hidden border-2 border-purple-500/30 backdrop-blur-sm h-64 sm:h-80 lg:h-96">
-              {/* <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1781.3374929711977!2d69.21711479512696!3d41.33407887277547!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b6d335ad179%3A0xb4aa336cdfa29db8!2sPedagogik%20mahorat%20va%20xalqaro%20baholash%20ilmiy-amaliy%20markazi!5e0!3m2!1sru!2s!4v1763512091504!5m2!1sru!2s"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-2xl"
-              /> */}
-
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1335154.9442351265!2d69.47352419373938!3d41.11331673616594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb017ddfce669b%3A0xa729209f19435936!2sAL_XORAZMIY%20MAKTABI!5e0!3m2!1suz!2s!4v1763819794574!5m2!1suz!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.2714845006217!2d69.31318851049677!3d41.30295727119095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5378726fbaf%3A0x2d84fd21efda8919!2sMuhammad%20al-Xorazmiy%20nomidagi%20ixtisoslashtirilgan%20maktab!5e0!3m2!1suz!2s!4v1763826719662!5m2!1suz!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

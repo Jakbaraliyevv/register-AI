@@ -3435,9 +3435,10 @@ html {
   inherits: false;
 }
 
-
-
-.texttt{
+.immgg {
+  height: 83% !important;
+}
+.texttt {
   font-size: 22px;
   font-weight: 600;
 }
@@ -3515,6 +3516,11 @@ html {
 
 .selectV {
   background-color: #101828;
+  border: 2px solid #3f266b;
+  outline: none;
+}
+.selectV:focus {
+  border-color: #6213a7;
 }
 .gapp {
   gap: 80px;
