@@ -1,24 +1,69 @@
-import { motion } from 'framer-motion';
-import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail } from 'lucide-react@0.487.0';
-
+import { motion } from "framer-motion";
+import { Facebook, Instagram, Youtube, Mail } from "lucide-react@0.487.0";
+import logo from "../assets/dg.png";
+import { useNavigate } from "react-router-dom";
+import { FaTelegramPlane } from "react-icons/fa";
 export function Footer() {
+  const navigate = useNavigate();
+
   const socialLinks = [
-    { icon: Facebook, href: '#', color: 'hover:text-blue-500' },
-    { icon: Twitter, href: '#', color: 'hover:text-sky-400' },
-    { icon: Linkedin, href: '#', color: 'hover:text-blue-600' },
-    { icon: Instagram, href: '#', color: 'hover:text-pink-500' },
-    { icon: Youtube, href: '#', color: 'hover:text-red-600' },
+    {
+      icon: Facebook,
+      href: "http://facebook.com/digitalgeneration.uz",
+      color: "hover:text-pink-500",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/dguzbekistan",
+      color: "hover:text-pink-500",
+    },
+    {
+      icon: FaTelegramPlane,
+      href: "https://t.me/digitalgeneration_uz",
+      color: "hover:text-red-600",
+    },
+    {
+      icon: Youtube,
+      href: "http://youtube.com/DigitalGenerationUzbekistan",
+      color: "hover:text-red-600",
+    },
   ];
 
   const footerLinks = {
-    Conference: ['About', 'Speakers', 'Schedule', 'Tickets'],
-    Resources: ['Blog', 'News', 'Press Kit', 'Media'],
-    Support: ['FAQ', 'Contact', 'Sponsors', 'Partners'],
-    Legal: ['Privacy Policy', 'Terms of Use', 'Code of Conduct'],
+    Bosh: ["Haqida", "Manzil", "Homiylar", "Bog'lanish"],
+    // Resources: ["Blog", "News", "Press Kit", "Media"],
+    "Yo'nalish": [
+      <a href="/register/rsumo" rel="noopener noreferrer">
+        Robo Sumo
+      </a>,
+      <a href="/register/contest" rel="noopener noreferrer">
+        DG Contest
+      </a>,
+
+      <a href="/register/rfutbol" rel="noopener noreferrer">
+        Robo Futbol
+      </a>,
+
+      <a href="/register/fixtirolar" rel="noopener noreferrer">
+        Foydali ixtirolar
+      </a>,
+    ],
+    Nizom: [
+      <a
+        href="../../public/nizom.docx"
+        target="_blank" // yangi tabda ochadi
+        rel="noopener noreferrer"
+      >
+        Nizomni ko‘rish
+      </a>,
+    ],
   };
 
   return (
-    <footer id='bog‘lanish' className="relative bg-black border-t border-purple-500/20 overflow-hidden">
+    <footer
+      id="bog‘lanish"
+      className="relative bg-black border-t border-purple-500/20 overflow-hidden"
+    >
       {/* Background Glow */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full filter blur-3xl" />
@@ -27,28 +72,30 @@ export function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Top Section */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gapp mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2 mb-4"
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-cyan-400 rounded-lg flex items-center justify-center">
-                <span className="text-white">AI</span>
-              </div>
               <div>
-                <div className="text-white">AI Conference</div>
-                <div className="text-xs text-purple-400">2025</div>
+                <img
+                  onClick={() => navigate("/")}
+                  className="logoo cursor-pointer"
+                  src={logo}
+                  alt=""
+                />
               </div>
             </motion.div>
             <p className="text-gray-400 mb-6">
-              The premier artificial intelligence conference bringing together global experts and innovators.
+              Texnologiya va innovatsiyalar rivojlanishi uchun platforma. Yosh
+              ixtirochilar va muhandislarni qo'llab-quvvatlash.
             </p>
-            <div className="flex items-center gap-2 text-gray-400">
+            {/* <div className="flex items-center gap-2 text-gray-400">
               <Mail size={16} />
-              <span>info@aiconf.uz</span>
-            </div>
+              <span>Jakbaraliyev29</span>
+            </div> */}
           </div>
 
           {/* Links */}
@@ -96,15 +143,15 @@ export function Footer() {
           <div className="text-gray-500 text-sm text-center md:text-right">
             <p>© 2025 AI Conference. All rights reserved.</p>
             <p className="text-xs mt-1">
-              Made with{' '}
+              Made with{" "}
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity }}
                 className="text-purple-400"
               >
                 ♥
-              </motion.span>{' '}
-              for the AI community
+              </motion.span>{" "}
+              INFINITE CO
             </p>
           </div>
         </div>

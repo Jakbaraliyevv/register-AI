@@ -3492,7 +3492,9 @@ html {
 .selectV {
   background-color: #101828;
 }
-
+.gapp{
+  gap: 80px;
+}
 .select-dark {
   background-color: #1f1f1f; /* qoraroq background */
   color: #fff; /* matn oq bo‘lsin */

@@ -86,82 +86,49 @@ const blocks = [
   },
 ];
 
-// export function BigBanner() {
-//   return (
-//     <div className="max-w-7xl mx-auto">
-//       <div className="relative rounded-3xl overflow-hidden shadow-xl flex flex-col md:flex-row h-[18rem] md:h-[20rem] lg:h-[22rem]">
-//         <div className="w-full md:w-1/2 h-48 md:h-full overflow-hidden">
-//           <img
-//             src={ai}
-//             alt="AI Texnologiyalar"
-//             className="w-full h-full object-cover transition-transform duration-500 ease-out transform hover:scale-105 filter"
-//           />
-//         </div>
-
-//         <div className="w-full md:w-1/2 flex flex-col justify-center p-6 bg-black/55 backdrop-blur-sm">
-//           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent mb-2">
-//             AI Day (prompt)
-//           </h2>
-//           <p className="text-gray-300 mb-4">
-//             Sun'iy intellektning yangi chegaralarini kashf qiling. Seminarlardan amaliy mashgʻulotlargacha — hammasi shu erda.
-//           </p>
-//           <div className="flex gap-3">
-//             <Link
-//               to="/register/ai"
-//               className="px-5 p-4 rounded-xl bg-purple-600 hover:bg-purple-500 transition shadow-lg font-semibold"
-//             >
-//               Ro‘yxatdan o‘ting →
-//             </Link>
-//           </div>
-//         </div>
-
-//         <div className="absolute inset-0 rounded-3xl pointer-events-none border-2 border-purple-500/15" />
-//       </div>
-//     </div>
-//   );
-// }
-
 export function BigBanner() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl  flex flex-col md:flex-row bg-gradient-to-br from-purple-900/40 via-indigo-900/30 to-black border border-purple-500/20">
-        {/* Left side - Image */}
-        <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-12 bg-gradient-to-br from-purple-800/20 to-transparent">
-          <div className="relative">
-            <div className="absolute inset-0 bg-purple-500/20 blur-3xl rounded-full animate-pulse" />
-            <img
-              src={ai}
-              alt="Robot Sumo"
-              className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain drop-shadow-2xl"
-            />
+    <a href="/register/robo-sumo">
+      <div className="max-w-4xl mx-auto  sm:px-6 lg:px-8">
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl  flex flex-col md:flex-row bg-gradient-to-br from-purple-900/40 via-indigo-900/30 to-black border border-purple-500/20">
+          {/* Left side - Image */}
+          <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-12 bg-gradient-to-br from-purple-800/20 to-transparent">
+            <div className="relative">
+              <div className="absolute inset-0 bg-purple-500/20 blur-3xl rounded-full animate-pulse" />
+              <img
+                src={ai}
+                alt="Robot Sumo"
+                className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain drop-shadow-2xl"
+              />
+            </div>
           </div>
+
+          {/* Right side - Content */}
+          <div className="w-full md:w-1/2 flex  flex-col p-4  justify-center  md:p-12 lg:p-16">
+            <h2 className="text-2xl md:text-4xl flex items-center justify-center lg:text-5xl font-bold bg-gradient-to-r from-purple-300 via-pink-300 to-purple-400 bg-clip-text text-transparent mb-4">
+              AI Day (prompt)
+            </h2>
+
+            <p className="text-gray-300  flex items-center justify-center text-base md:text-lg mb-8 leading-relaxed">
+              Robotlarning kuchli to'qnashuv janglari.
+            </p>
+
+            <a
+              href="/register/robo-sumo"
+              className="px-8 py-4 flex justify-center items-center rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 font-semibold text-lg transform hover:scale-105"
+            >
+              Ro'yxatdan o'ting
+            </a>
+          </div>
+
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-pink-600/10 rounded-full blur-3xl" />
+
+          {/* Border glow effect */}
+          <div className="absolute inset-0 rounded-3xl pointer-events-none border border-purple-400/30" />
         </div>
-
-        {/* Right side - Content */}
-        <div className="w-full md:w-1/2 flex  flex-col p-4  justify-center  md:p-12 lg:p-16">
-          <h2 className="text-2xl md:text-4xl flex items-center justify-center lg:text-5xl font-bold bg-gradient-to-r from-purple-300 via-pink-300 to-purple-400 bg-clip-text text-transparent mb-4">
-            AI Day (prompt)
-          </h2>
-
-          <p className="text-gray-300  flex items-center justify-center text-base md:text-lg mb-8 leading-relaxed">
-            Robotlarning kuchli to'qnashuv janglari.
-          </p>
-
-          <a
-            href="/register/robo-sumo"
-            className="px-8 py-4 flex justify-center items-center rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 font-semibold text-lg transform hover:scale-105"
-          >
-            Ro'yxatdan o'ting
-          </a>
-        </div>
-
-        {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-pink-600/10 rounded-full blur-3xl" />
-
-        {/* Border glow effect */}
-        <div className="absolute inset-0 rounded-3xl pointer-events-none border border-purple-400/30" />
       </div>
-    </div>
+    </a>
   );
 }

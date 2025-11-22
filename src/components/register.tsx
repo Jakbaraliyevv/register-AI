@@ -528,9 +528,9 @@ export default function Register(): JSX.Element {
                   {needsFriend && (
                     <div className="flex items-center gap-2 text-purple-300 font-semibold border-b border-purple-500/30 pb-2">
                       <span className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm">
-                        1
+                        1 -
                       </span>
-                      Sizning ma'lumotlaringiz
+                      Ishtirokchi
                     </div>
                   )}
 
@@ -616,11 +616,11 @@ export default function Register(): JSX.Element {
                 {/* ===== DO'ST MA'LUMOTLARI (faqat rfutbol uchun) ===== */}
                 {needsFriend && (
                   <div className="space-y-4 mt-6 pt-6 border-t-2 border-dashed border-purple-500/30">
-                    <div className="flex items-center gap-2 text-green-300 font-semibold border-b border-green-500/30 pb-2">
-                      <span className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">
-                        2
+                    <div className="flex items-center gap-2 text-purple-300 font-semibold border-b border-purple-500/30 pb-2">
+                      <span className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm">
+                        2 -
                       </span>
-                      Sherigingiz ma'lumotlari
+                      Ishtirokchi
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -768,7 +768,7 @@ export default function Register(): JSX.Element {
             )}
           </main>
         </div>
-        <div className="mb-5 w-full flex flex-col gap-8">
+        <div className="mb-5 w-full flex flex-col flex-wrap gap-8">
           <div className="text-center">
             <p className="text-purple-200 font-bold textp">
               Ishtirokchilar yutib olishi mumkin bo'lgan sovg'alar

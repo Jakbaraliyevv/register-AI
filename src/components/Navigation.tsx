@@ -9,7 +9,19 @@ export function Navigation() {
   const { showRegister, setShowRegister } = useModal();
   const [language, setLanguage] = useState("EN");
 
-  const navLinks = ["Haqida",  "Manzil", "Homiylar", "Bog‘lanish"];
+  const navLinks = [
+    "Haqida",
+    "Manzil",
+    "Homiylar",
+    "Bog‘lanish",
+    <a
+      href="../../public/nizom.docx"
+      target="_blank" // yangi tabda ochadi
+      rel="noopener noreferrer"
+    >
+      Nizom
+    </a>,
+  ];
   const languages = ["EN"];
 
   // 'Nutqchilar' "Jadval",
