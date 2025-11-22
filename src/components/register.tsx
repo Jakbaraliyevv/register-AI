@@ -582,7 +582,7 @@ export default function Register(): JSX.Element {
           Contest Yo'nalishi
         </h3>
         <p className="text-gray-300 mb-6">
-          Quyidagi ijtimoiy sahifalarimizga obuna bo'ling va <br />
+          Quyidagi ijtimoiy tarmoq sahifalarimizga obuna bo'ling va <br />
           keyingi qadamlar haqida xabardor bo'ling.
         </p>
 
@@ -688,7 +688,7 @@ export default function Register(): JSX.Element {
               {noForm && (
                 <div className="mb-4 p-3 bg-green-500/20 border border-green-500/40 rounded-xl">
                   <p className="text-green-300 text-sm">
-                    🎯 Bu yo'nalish uchun ijtimoiy sahifalarimizga obuna bo'ling.
+                    🎯 Bu yo'nalish uchun ijtimoiy tarmoq sahifalarimizga obuna bo'ling.
                   </p>
                 </div>
               )}
@@ -812,7 +812,7 @@ export default function Register(): JSX.Element {
                     )}
 
                     <h2 className="text-center">
-                      Ro'yxatdan to'liq o'tish uchun <br /> bizning media
+                      Ro'yxatdan to'liq o'tish uchun <br /> bizning  ijtimoiy tarmoq
                       sahifalarimizga ham obuna bo'ling. 👇
                     </h2>
                     <div className="flex justify-center gap-4 mt-4">
