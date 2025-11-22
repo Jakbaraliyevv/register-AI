@@ -3474,18 +3474,81 @@ html {
   }
 }
 
-
-.textp{
+.textp {
   font-size: 29px;
-font-weight: 600;
-margin-top: 20px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 /* .mtop{
   padding-top: 40px;
 } */
 
-.logoo{
+.logoo {
   width: 220px;
   padding: 30px 0;
+}
+
+.selectV {
+  background-color: #101828;
+}
+
+.select-dark {
+  background-color: #1f1f1f; /* qoraroq background */
+  color: #fff; /* matn oq bo‘lsin */
+  border: 1px solid #444; /* chekka */
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* placeholder rangi */
+.select-dark option[value=""] {
+  color: #aaa;
+}
+
+/* disabled holat */
+.select-dark:disabled {
+  background-color: #2c2c2c;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.buttonSend {
+  margin-top: 20px;
+}
+
+.boxx {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.box2 {
+  padding: 17px 0;
+}
+
+.btn-enabled {
+  background: #7c3aed; /* purple-600 */
+  color: white;
+  cursor: pointer;
+}
+
+.btn-enabled:hover {
+  background: #8b5cf6; /* purple-500 */
+}
+
+.btn-disabled {
+  background: #4c1d95; /* purple-800/900 — qoraroq */
+  color: #d1d5db; /* gray-300 */
+  cursor: not-allowed;
+}
+
+.cansell {
+  cursor: pointer;
+}
+
+.carddd {
+  cursor: pointer;
 }

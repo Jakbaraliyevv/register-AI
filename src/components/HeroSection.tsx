@@ -13,6 +13,7 @@ export function FiveBlocks() {
   const allBlocks = [...blocks]; // original massivni saqlab qo'yish
   const mainBlock = allBlocks.shift(); // birinchi elementni olib olamiz
   const smallBlocks = allBlocks;
+  console.log(smallBlocks, "4567890-8589");
   return (
     <div className="w-full mt-![20px]">
       <ScrollReveal className="mt-6 mt-10" direction="up" delay={0.04}>
@@ -44,12 +45,23 @@ export function FiveBlocks() {
                   </p>
 
                   <div className="flex items-center justify-center  mt-auto min-sm:justify-center">
-                    <Link
-                      to={item.link}
-                      className="px-5 p-2 rounded-lg bg-purple-600 hover:bg-purple-500 mt-2 transition font-semibold"
-                    >
-                      Ro‘yxatdan o‘ting
-                    </Link>
+                    {item.link === "/register/contest" ? (
+                      <a
+                        href="https://raqamliavlod.uz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-5 p-2 rounded-lg bg-purple-600 hover:bg-purple-500 mt-2 transition font-semibold"
+                      >
+                        Ro‘yxatdan o‘ting
+                      </a>
+                    ) : (
+                      <Link
+                        to={item.link}
+                        className="px-5 p-2 rounded-lg bg-purple-600 hover:bg-purple-500 mt-2 transition font-semibold"
+                      >
+                        Ro‘yxatdan o‘ting
+                      </Link>
+                    )}
                   </div>
                 </div>
 

@@ -1,5 +1,5 @@
-import { MapPin, Navigation, Phone, Mail } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { MapPin, Navigation, Phone, Mail } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function LocationSection() {
   return (
@@ -11,8 +11,9 @@ export function LocationSection() {
       <div
         className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(168,85,247,0.5) 2px, transparent 2px)',
-          backgroundSize: '50px 50px',
+          backgroundImage:
+            "radial-gradient(circle, rgba(168,85,247,0.5) 2px, transparent 2px)",
+          backgroundSize: "50px 50px",
         }}
       />
 
@@ -23,7 +24,7 @@ export function LocationSection() {
             Manzil
           </div>
           <h2 className="text-4xl lg:text-5xl mb-4 text-white">
-            Bizni konferensiyamizga tashrif buyuring: {' '}
+            Bizni konferensiyamizga tashrif buyuring:{" "}
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
               Toshkent
             </span>
@@ -66,8 +67,10 @@ export function LocationSection() {
                 <div>
                   <h4 className="text-white mb-2">Manzil</h4>
                   <p className="text-gray-400">
-                    Amir Temur ko‘chasi, 107A<br />
-                    Toshkent, O‘zbekiston<br />
+                    Amir Temur ko‘chasi, 107A
+                    <br />
+                    Toshkent, O‘zbekiston
+                    <br />
                     100084
                   </p>
                 </div>
