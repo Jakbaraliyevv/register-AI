@@ -7,7 +7,7 @@ import viloyatlar from "../components/district/viloyat.json";
 import tumanlar from "../components/district/tuman.json";
 import { Footer } from "./Footer";
 import { Link } from "react-router-dom";
-
+import rfootbol from "../assets/rfutboll.png";
 type Params = { id?: string };
 
 type Viloyat = {
@@ -892,7 +892,7 @@ export default function Register(): JSX.Element {
             </p>
           </div>
 
-          <div className="w-full justify-between py-3 flex gap-6">
+          {/* <div className="w-full justify-between py-3 flex gap-6">
             {eventGifts?.length ? (
               eventGifts?.map((gift, index) => (
                 <div
@@ -944,7 +944,8 @@ export default function Register(): JSX.Element {
                 <p className="text-lg">Hozircha sovg'alar mavjud emas</p>
               </div>
             )}
-          </div>
+          </div> */}
+          <img className="imagess" src={rfootbol} alt="" />
         </div>
       </div>
       <div className="footerr">

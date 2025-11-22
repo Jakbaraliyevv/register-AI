@@ -3589,6 +3589,11 @@ html {
   background: #8b5cf6; /* purple-500 */
 }
 
+.imagess {
+  height: 500px;
+  width: 100% !important;
+border-radius: 17px;
+}
 .btn-disabled {
   background: #4c1d95; /* purple-800/900 — qoraroq */
   color: #d1d5db; /* gray-300 */
@@ -3614,7 +3619,6 @@ html {
   background-color: #9810fa;
 }
 
-
-.footerr{
+.footerr {
   margin-top: 60px;
 }
