@@ -5,6 +5,7 @@ import { CountdownTimer } from "./ui/CountdownTimer";
 import logo from "../assets/dg.png";
 import viloyatlar from "../components/district/viloyat.json";
 import tumanlar from "../components/district/tuman.json";
+import { Footer } from "./Footer";
 
 type Params = { id?: string };
 
@@ -688,7 +689,8 @@ export default function Register(): JSX.Element {
               {noForm && (
                 <div className="mb-4 p-3 bg-green-500/20 border border-green-500/40 rounded-xl">
                   <p className="text-green-300 text-sm">
-                    🎯 Bu yo'nalish uchun ijtimoiy tarmoq sahifalarimizga obuna bo'ling.
+                    🎯 Bu yo'nalish uchun ijtimoiy tarmoq sahifalarimizga obuna
+                    bo'ling.
                   </p>
                 </div>
               )}
@@ -812,7 +814,7 @@ export default function Register(): JSX.Element {
                     )}
 
                     <h2 className="text-center">
-                      Ro'        to'liq o'tish uchun <br /> bizning  ijtimoiy tarmoq
+                      Ro' to'liq o'tish uchun <br /> bizning ijtimoiy tarmoq
                       sahifalarimizga ham obuna bo'ling. 👇
                     </h2>
                     <div className="flex justify-center gap-4 mt-4">
@@ -942,6 +944,9 @@ export default function Register(): JSX.Element {
             )}
           </div>
         </div>
+      </div>
+      <div className="footerr">
+        <Footer />
       </div>
     </section>
   );
