@@ -7,10 +7,12 @@ import logo from "../assets/dg.png";
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { showRegister, setShowRegister } = useModal();
-  const [language, setLanguage] = useState("UZ");
+  // const [language, setLanguage] = useState("UZ");
 
   const navLinks = ["Haqida", "Manzil", "Homiylar", "Bog‘lanish"];
-  const languages = ["UZ"];
+  // const languages = [
+
+  // ];
 
   // 'Nutqchilar' "Jadval",
 
@@ -55,9 +57,8 @@ export function Navigation() {
           </div>
 
           {/* Desktop CTA + Language */}
-          <div className="hidden lg:flex items-center gap-4">
-            <div className="flex gap-2 bg-purple-900/30 rounded-full p-1">
-              {languages.map((lang) => (
+          <div className="btnn">
+            {/* {languages.map((lang) => (
                 <button
                   key={lang}
                   onClick={() => setLanguage(lang)}
@@ -69,8 +70,15 @@ export function Navigation() {
                 >
                   {lang}
                 </button>
-              ))}
-            </div>
+              ))} */}
+            <a
+              className=""
+              href="../../public/nizom.pdf"
+              target="_blank" // yangi tabda ochadi
+              rel="noopener noreferrer"
+            >
+              Nizomni ko‘rish
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
