@@ -58,25 +58,7 @@ export function Navigation() {
 
           {/* Desktop CTA + Language */}
           <div className="btnn">
-            {/* {languages.map((lang) => (
-                <button
-                  key={lang}
-                  onClick={() => setLanguage(lang)}
-                  className={`px-3 py-1 rounded-full transition-all ${
-                    language === lang
-                      ? "bg-purple-600 text-white"
-                      : "text-gray-400 hover:text-white"
-                  }`}
-                >
-                  {lang}
-                </button>
-              ))} */}
-            <a
-              className=""
-              href="../../public/nizom.pdf"
-              target="_blank" // yangi tabda ochadi
-              rel="noopener noreferrer"
-            >
+            <a href="/nizom.pdf" target="_blank" rel="noopener noreferrer">
               Nizomni ko‘rish
             </a>
           </div>

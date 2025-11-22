@@ -636,7 +636,7 @@ export default function Register(): JSX.Element {
                             }
                           `}
         >
-          {loading ? "Tasdiqlanmoqda..." : "Tasdiqlash"}
+          {loading ? "Tasdiqlanmoqda..." : "Ro'yxatdan o'tish"}
         </button>
 
         <button
@@ -764,7 +764,7 @@ export default function Register(): JSX.Element {
                   </h2>
                   <a
                     className="flex items-center justify-center  btnn"
-                    href="../../public/nizom.pdf"
+                    href="/nizom.pdf"
                     target="_blank" // yangi tabda ochadi
                     rel="noopener noreferrer"
                   >
@@ -812,7 +812,7 @@ export default function Register(): JSX.Element {
                     )}
 
                     <h2 className="text-center">
-                      Ro'yxatdan to'liq o'tish uchun <br /> bizning  ijtimoiy tarmoq
+                      Ro'        to'liq o'tish uchun <br /> bizning  ijtimoiy tarmoq
                       sahifalarimizga ham obuna bo'ling. 👇
                     </h2>
                     <div className="flex justify-center gap-4 mt-4">

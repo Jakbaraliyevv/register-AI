@@ -50,7 +50,7 @@ export function Footer() {
     ],
     Nizom: [
       <a
-        href="../../public/nizom.pdf"
+        href="/nizom.pdf"
         target="_blank" // yangi tabda ochadi
         rel="noopener noreferrer"
       >
