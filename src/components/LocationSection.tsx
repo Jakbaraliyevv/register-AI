@@ -114,7 +114,7 @@ export function LocationSection() {
 
             {/* Yo‘nalish olish tugmasi */}
             <a
-              href="https://maps.app.goo.gl/DWX5yqWCeTPzSozi6"
+              href="https://www.google.com/maps/place/Muhammad+al-Xorazmiy+nomidagi+ixtisoslashtirilgan+maktab/@41.302777,69.316121,16z/data=!4m6!3m5!1s0x38aef5378726fbaf:0x2d84fd21efda8919!8m2!3d41.3029573!4d69.3157688!16s%2Fg%2F11q7zznwn3?hl=uz&entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-500 rounded-full text-white flex items-center justify-center gap-2 shadow-lg shadow-purple-500/50 hover:shadow-purple-500/80 transition-shadow"
